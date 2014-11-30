@@ -1,0 +1,42 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	width: 80%;
+	margin: auto;
+}
+
+header {
+	background-color: #000;
+	height: 45px;
+}
+
+.logo h1 {
+	font-size: 2.0em;
+	color: #fff;
+	/*text-transform: capitalize;*/
+	font-variant: small-caps;
+	padding: 5px;
+	padding-bottom: 2px;
+}
+
+.nav {
+	display: inline-block;
+	float: right;
+}
+
+nav {
+	padding-bottom: 2px;
+}
+
+.links {
+	display: inline-block;
+
+}
+
+a {
+	text-decoration: none;
+}
