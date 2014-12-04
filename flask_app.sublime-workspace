@@ -4,6 +4,42 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"f",
+				"form	Tag"
+			],
+			[
+				"text-",
+				"text-decoration"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"n",
+				"nav	Tag"
+			],
+			[
+				"li",
+				"link	Tag"
+			],
+			[
 				"__",
 				"__name__"
 			],
@@ -12,24 +48,12 @@
 				"container"
 			],
 			[
-				"mar",
-				"margin"
-			],
-			[
-				"co",
-				"code	Tag"
-			],
-			[
 				"h",
 				"h1	Tag"
 			],
 			[
 				"b",
 				"background-color"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"fo",
@@ -50,18 +74,6 @@
 			[
 				"lis",
 				"list-style-type"
-			],
-			[
-				"li",
-				"list-style"
-			],
-			[
-				"padd",
-				"padding-left"
-			],
-			[
-				"ma",
-				"margin"
 			],
 			[
 				"te",
@@ -160,26 +172,42 @@
 	"buffers":
 	[
 		{
-			"file": "app/README.md",
+			"file": "app/intro_to_flask/templates/layout.html",
 			"settings":
 			{
-				"buffer_size": 120,
+				"buffer_size": 777,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/layout.html",
+			"file": "app/intro_to_flask/templates/index.html",
 			"settings":
 			{
-				"buffer_size": 314,
+				"buffer_size": 183,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "app/templates/home.html",
+			"file": "app/intro_to_flask/templates/about.html",
 			"settings":
 			{
-				"buffer_size": 222,
+				"buffer_size": 216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/intro_to_flask/templates/contact.html",
+			"settings":
+			{
+				"buffer_size": 927,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "app/intro_to_flask/static/css/main.css",
+			"settings":
+			{
+				"buffer_size": 4994,
 				"line_ending": "Unix"
 			}
 		}
@@ -284,6 +312,15 @@
 	},
 	"file_history":
 	[
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/templates/layout.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/templates/contact.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/templates/home.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/templates/about.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/static/css/main.css",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/intro_to_flask/templates/layout.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/templates/gfjs.html",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/README.md",
+		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/static/main.css",
 		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/<span class=\"skimlinks-unlinked\">routes.py<:span>.py",
 		"/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/app/routes.py",
 		"/Users/Keith/Dropbox/Programming/tutsplus flaskapp/app/README.md",
@@ -430,23 +467,25 @@
 			[
 				{
 					"buffer": 0,
-					"file": "app/README.md",
+					"file": "app/intro_to_flask/templates/layout.html",
 					"settings":
 					{
-						"buffer_size": 120,
+						"buffer_size": 777,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								777,
+								777
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -456,18 +495,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "app/templates/layout.html",
+					"file": "app/intro_to_flask/templates/index.html",
 					"settings":
 					{
-						"buffer_size": 314,
+						"buffer_size": 183,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								314,
-								314
+								0,
+								0
 							]
 						],
 						"settings":
@@ -482,18 +521,18 @@
 				},
 				{
 					"buffer": 2,
-					"file": "app/templates/home.html",
+					"file": "app/intro_to_flask/templates/about.html",
 					"settings":
 					{
-						"buffer_size": 222,
+						"buffer_size": 216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								222,
-								222
+								0,
+								0
 							]
 						],
 						"settings":
@@ -502,6 +541,67 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/intro_to_flask/templates/contact.html",
+					"settings":
+					{
+						"buffer_size": 927,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 4,
+					"file": "app/intro_to_flask/static/css/main.css",
+					"settings":
+					{
+						"buffer_size": 4994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 68.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -526,11 +626,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.697955753991,
 			1.0
 		],
 		"rows":
@@ -569,10 +676,10 @@
 		],
 		"width": 380.0
 	},
-	"show_minimap": true,
+	"show_minimap": false,
 	"show_open_files": true,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 197.0,
 	"status_bar_visible": true
 }

@@ -12,7 +12,8 @@ app.config["MAIL_PASSWORD"] = 'syD10gabY14'
  
 from intro_to_flask.routes import mail
 mail.init_app(app)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:GABY6SYD2@localhost/development'
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:gaby6syd2@127.0.0.1/development'
 
 from intro_to_flask.models import db
 db.init_app(app)

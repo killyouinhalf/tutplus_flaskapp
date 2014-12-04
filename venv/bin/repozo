@@ -1,0 +1,10 @@
+#!/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/venv/bin/python2.7
+# EASY-INSTALL-ENTRY-SCRIPT: 'ZODB==4.0.1','console_scripts','repozo'
+__requires__ = 'ZODB==4.0.1'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('ZODB==4.0.1', 'console_scripts', 'repozo')()
+    )

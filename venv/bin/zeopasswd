@@ -1,0 +1,10 @@
+#!/Users/Keith/Dropbox/Programming/tutsplus_flaskapp/venv/bin/python2.7
+# EASY-INSTALL-ENTRY-SCRIPT: 'ZEO==4.0.0','console_scripts','zeopasswd'
+__requires__ = 'ZEO==4.0.0'
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.exit(
+        load_entry_point('ZEO==4.0.0', 'console_scripts', 'zeopasswd')()
+    )

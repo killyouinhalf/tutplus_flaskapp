@@ -1,5 +1,5 @@
-import flask.ext.wtf
-from wtforms import Form, StringField, TextAreaField, SubmitField, validators, ValidationError
+from flask.ext.wtf import Form
+from wtforms import  StringField, TextAreaField, SubmitField, validators, ValidationError
 
 
 class ContactForm(Form):
