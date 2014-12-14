@@ -17,7 +17,7 @@ class SignUpForm(Form):
     submit = SubmitField("Create account")
 
     def __init__(self, *args, **kwargs):
-        Form.__init__(self. *args, **kwargs)
+        Form.__init__(self, *args, **kwargs)
 
     def validate(self):
         if not Form.validate(self):
