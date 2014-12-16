@@ -1,5 +1,6 @@
 from flask.ext.wtf import Form
 from wtforms import  StringField, TextAreaField, SubmitField, validators, ValidationError, PasswordField
+from intro_to_flask.models import db, User
 
 
 class ContactForm(Form):
@@ -17,7 +18,7 @@ class SignUpForm(Form):
     submit = SubmitField("Create account")
 
     def __init__(self, *args, **kwargs):
-        Form.__init__(self. *args, **kwargs)
+        Form.__init__(self, *args, **kwargs)
 
     def validate(self):
         if not Form.validate(self):
