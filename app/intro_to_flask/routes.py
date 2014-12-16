@@ -41,3 +41,5 @@ def contact():
         return render_template('contact.html', form=form)
 
 
+@app.route('/signup',methods=['GET', 'POST'])
+def signup():
