@@ -1,6 +1,6 @@
 from intro_to_flask import app
 from flask import Flask, render_template, request, flash, session, redirect, url_for
-from intro_to_flask.forms import ContactForm, SignUpForm
+from intro_to_flask.forms import ContactForm, SignUpForm, SignInForm
 from flask.ext.mail import Message, Mail
 from intro_to_flask.forms import ContactForm
 from intro_to_flask.models import db, User
@@ -45,6 +45,9 @@ def contact():
 def signup():
     form = SignUpForm()
 
+    if 'email' in session:
+        return redirect(url_for('profile'))
+
     if request.method == 'POST':
         if form.validate == 'False':
             return render_template('signup.html', form = form)
@@ -73,6 +76,36 @@ def profile():
         return render_template('profile.html')
 
 
+@app.route('/signin', methods=['GET', 'POST'])
+def signin():
+    form = SignInForm()
 
+    if 'email' in session:
+        return redirect(url_for('profile'))
+
+    if request.method == 'POST':
+        if form.validate == 'False':
+            return render_template('signin.html', form = form)
+        else:
+            session['email'] = form.email.data
+            return redirect(url_for('profile'))
+
+    elif request.method == 'GET':
+        return render_template('signin.html', form = form)
+
+
+@app.route('/signout')
+def signout():
+ 
+  if 'email' not in session:
+    return redirect(url_for('signin'))
+     
+  session.pop('email', None)
+  return redirect(url_for('home'))
+
+
+
+
+    
 
 

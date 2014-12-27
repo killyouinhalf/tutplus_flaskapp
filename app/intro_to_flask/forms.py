@@ -9,6 +9,7 @@ class ContactForm(Form):
     message = TextAreaField("Message", [validators.DataRequired("Please enter a message.")])
     submit = SubmitField("Send")
 
+
 class SignUpForm(Form):
     firstname = StringField("First name", [validators.DataRequired("Please enter your first name.")])
     lastname = StringField("Last name", [validators.DataRequired("Please enter your last name.")])
@@ -29,3 +30,30 @@ class SignUpForm(Form):
             return False
         else:
             return True
+
+
+class SignInForm(Form):
+    email = StringField("Email", [validators.DataRequired("Please enter your email address"), validators.Email('Please enter a valid email.')])
+    password = PasswordField("Password", [validators.DataRequired("Please enter your password.")])
+    submit = SubmitField("Sign In")
+
+    def __init__(self, *args, **kwargs):
+        Form.__init__(self, *args, **kwargs)
+
+        def validate(self):
+            if not Form.validate(self):
+                return False
+
+            user = User.query.filter_by(email = self.email.data.lower()).first()
+            if user and user.check_password(self.password.data):
+                return True
+            else:
+                self.email.errors.append("Invalid e-mail or password.")
+                return False
+
+
+
+
+
+
+
